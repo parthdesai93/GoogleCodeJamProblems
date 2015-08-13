@@ -35,7 +35,6 @@ public class Credit {
 		
 		for(int i=0; i<parts.length; i++){
 			l.add(parts[i]);
-			System.out.println(l.get(i));
 		}
 		
 		sumloop:
@@ -43,18 +42,14 @@ public class Credit {
 			for(int j= i+1 ;j<l.size(); j++ ){
 				sum = Integer.parseInt(l.get(i)) + Integer.parseInt(l.get(j));
 				if(sum == credit){
-					
-					case1 = i;
-					case2 = j;
-					System.out.println("I :" + l.get(i) + "J :" + l.get(j));
+					case1 = i+1;
+					case2 = j+1;
 					break sumloop;
 				}
 			}
 		}
-		case1 = case1+1;
-		case2 = case2+1;
 		
-		System.out.println("Case 1 :" + case1 + " - Case 2 : " + case2);
+		System.out.println("Case 1 :" + case1 +" " + case2);
 		
 		
 		in.close();
