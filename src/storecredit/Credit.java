@@ -8,7 +8,7 @@ public class Credit {
 	
 	
 	public static void main(String args[]) {
-		//int numberOfCases;
+		int numberOfCases;
 		int credit;
 		int numberOfItems; 
 		int temp;
@@ -22,7 +22,7 @@ public class Credit {
 		
 		Scanner in = new Scanner(System.in);
 		
-			
+		numberOfCases = in.nextInt();	
 		System.out.println("Enter the credit");
 		credit = in.nextInt();
 		System.out.println("Enter number of items");
@@ -43,7 +43,7 @@ public class Credit {
 				sum = Integer.parseInt(l.get(i)) + Integer.parseInt(l.get(j));
 				if(sum == credit){
 					case1 = i+1;
-					case2 = j+1;
+					case2 = j+1;	
 					break sumloop;
 				}
 			}
