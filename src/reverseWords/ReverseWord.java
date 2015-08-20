@@ -10,7 +10,6 @@ import java.util.Scanner;
 
 public class ReverseWord {
  
-	
 	public static void main(String[] args){
 		String line; 
 		Scanner in = new Scanner(System.in);
@@ -22,6 +21,5 @@ public class ReverseWord {
 		}
 		
 		in.close();
-	}
-	
+	}	
 }
